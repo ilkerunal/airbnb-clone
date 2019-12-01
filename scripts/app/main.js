@@ -76,7 +76,7 @@ $(document).ready(function () {
         var width = $(document).width();
 
         if (width > 768) {
-            $('.hygge-slick-slider').slick('unslick');
+            $('.hygge-slick-slider').not('slick-initialized').slick('unslick');
         } else {
             $('.hygge-slick-slider').slick({
                 slidesToShow: 1,
