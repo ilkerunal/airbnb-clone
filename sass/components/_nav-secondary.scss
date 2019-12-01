@@ -1,0 +1,55 @@
+.navbar-secondary{
+    width: 100%;
+    height: 0;
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-y: hidden;
+    transition: 0.5s;
+
+    .navbar-secondary-content{
+        position: relative;
+        padding: 100px 24px 24px 24px; 
+        width: 100%;
+        height: 100%;
+        li{
+            width: 100%;
+            text-decoration: none;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+            hr{
+                margin: 16px 0 ;
+                opacity: 0.2;
+            }
+            a{
+                display: block;
+                line-height: 22px;
+                font-size: 16px;
+                width: 100%;
+                color: rgba(72, 72, 72,.9);
+                padding: 12px 0;
+
+            }
+            .multi-content-link{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+               
+                p{
+                    span{
+                        font-size: 14px;
+                        padding: 2px 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-height: 450px) {
+    .navbar-secondary {
+        overflow-y: auto;
+    }
+}

@@ -1,0 +1,86 @@
+@import "../abstracts/variables";
+.explore{
+   
+    .explore-content {
+        
+        display: inline-block;
+        overflow-x: scroll;
+        white-space: nowrap;
+        display: flex; 
+        justify-content: flex-start;
+        min-height: 170px;
+        
+        @include media-breakpoint-up(md)  { 
+            min-height: unset;
+            justify-content: center;
+            overflow-x: unset;
+        }
+        .explore-carousel {
+           
+            &:not(:first-of-type){
+                margin-left: 8px;
+            };
+            box-shadow: $airbnb-box-shadow;
+            max-height: 160px;
+            position: relative;
+            border : 1px solid rgba(0, 0, 0, 0.02);
+            min-width: 130px;
+            max-width: 130px;
+            border-radius: 12px;
+            overflow: hidden;
+            flex-basis: 25%;
+            display: flex;
+            flex-direction: column;
+            &:not(:last-of-type){
+                            margin-right: 8px;
+                        }
+
+            @include media-breakpoint-up(md)  { 
+                min-width: unset;
+                max-width: unset;
+                max-height: unset;
+            }
+
+            @include media-breakpoint-up(xl)  { 
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-items: center;
+                max-height: 126px ;
+            }
+            .card-img-top{
+                max-width: 100%;
+                max-height: 75%;
+                flex: 0 0 40%;
+                @include media-breakpoint-up(xl) {
+                    max-height: unset;
+                }
+                @include media-breakpoint-up(xl) {
+                    max-width: 40%;
+                }
+            
+        }
+        .card-body{
+            padding: .5rem;
+                 @include media-breakpoint-up(xl)  {
+                    padding-left: 2rem;
+                }
+                .card-title{
+                    white-space: initial;
+                    display: block;
+                    word-break: break-word;
+                    font-size:15px;
+                    color: $airbnb-text-color;
+                    margin-bottom: 0;
+                }
+                .card-description{
+                    color: #767676;
+                    font-size: 12px;
+                }
+        }
+               
+        }
+    }
+        
+}

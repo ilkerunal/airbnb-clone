@@ -1,0 +1,119 @@
+@import "../abstracts/variables";
+
+#headerNav{
+    display: flex;
+    height: 80px;
+    flex-direction: row;
+    align-content: center;
+    justify-items: center;
+    margin-bottom: auto;
+    position: fixed;
+    &.details{
+        position: relative;
+    }
+    &.home{
+        background-color: transparent;
+        position: absolute;
+        box-shadow: none;
+        .navbar-collapse{
+        height: 100%;
+        align-self: flex-end;
+        .navbar-nav{
+                .nav-item{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    border-bottom: 2px solid transparent;
+                    height: 80px;
+                    a{
+                        box-sizing: border-box;
+                        font-size: 14px;
+                        color: white;
+                        padding:0px 16px;
+                        font-weight: 500;
+                        flex-wrap: nowrap;
+                    }
+                    border-bottom: 2px solid transparent;
+                    
+                    &:hover{
+                        border-bottom: 2px solid white;
+                    }
+                }
+            }
+        } 
+    }
+        background-color: white;
+        box-shadow: 0 1px 0 #EBEBEB;
+        z-index: 10;
+        .navbar-toggler{
+            z-index: 102;
+            margin-right: 10px;
+            svg{
+                fill: $airbnb-pink;
+            }
+                z-index: 1000;
+        }
+        .navbar-interactions{
+            flex: 0 0 50%;
+            display: flex;
+            justify-content: flex-start;
+            justify-items: center;
+            align-content: center;
+            align-items: center;
+            @include media-breakpoint-down(md)  {
+                flex: 0 0 100%;
+            }
+            
+           
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                .nav-item{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    border-bottom: 2px solid transparent;
+                    height: 80px;
+                    a{
+                        box-sizing: border-box;
+                        font-size: 14px;
+                        padding:0px 16px;
+                        font-weight: 500;
+                        flex-wrap: nowrap;
+                        color: $airbnb-text-color;
+                        white-space: nowrap;
+                    }
+                    border-bottom: 2px solid transparent;
+                    &:hover{
+                    border-bottom: 2px solid $airbnb-text-color;
+                    }
+                }
+            }
+        }
+    .navbar-expander{
+    align-self: flex-start;
+    height: 100%;
+    display: flex;
+    z-index: 1000;
+    transition-duration: .3s;
+    fill: white;
+    svg{
+        height: 36px;
+        display: block;
+    }
+    &.open{
+        fill: $airbnb-pink;
+        transition: 0.5s;
+    }
+
+    :after{
+        content: "";
+        height: 10px;
+        width: 10px;
+        background-color: red;
+        }   
+    }
+    
+}

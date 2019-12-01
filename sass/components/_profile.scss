@@ -1,0 +1,42 @@
+.profile{
+    
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+    .profile-picture-container{
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 6px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        @include media-breakpoint-down(sm) {
+            height: 48px;
+            width: 48px;
+        }
+        
+    }
+    .profile-medal{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 8px;
+        @include media-breakpoint-down(sm) {
+            right: 10px;
+            transform: translateY(0%);
+        }
+    }
+    .profile-owner{
+        justify-self: flex-end;
+        @include media-breakpoint-down(sm) {
+           display: none;
+        }
+    }
+}

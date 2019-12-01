@@ -1,0 +1,73 @@
+@import "../abstracts/variables";
+
+button:focus{
+    outline: none;
+}
+
+.button-airbnb {
+    font-weight: 700;
+    font-size: 1rem;
+    height: 48px;
+}
+
+.button-airbnb-primary{
+    background-color: $airbnb-pink;
+    color: #fff;
+    :hover{
+        color: #fff;
+        background-color: $airbnb-pink;
+    }
+    :active{
+        color: #fff;
+        background-color: $airbnb-pink;
+    }
+}
+.button-airbnb-secondary{
+    background-color: #fff;
+    color: $airbnb-text-color;
+    &:hover {
+    color: $airbnb-text-color;
+    background-color: #fff;
+    }
+    &:focus{
+        color: $airbnb-text-color;
+        background-color: #fff;
+        border: 1px solid black;
+        outline: 5px solid  rgba(255, 255, 255, .25);
+        
+    }
+}
+
+.button-airbnb-ocean{
+    background-color: #fff;
+    color: $ocean-blue ;
+    border: 1px solid $ocean-blue ;
+    font-weight: 500;
+    font-size: 14px;
+    &:hover {
+        text-decoration: none;
+    }
+    &:focus{
+        text-decoration: none;
+
+        
+    }
+}
+
+
+.filter-button{
+    border-radius : 50px;
+    border: 1px solid rgba(72, 72, 72, .3);
+    background-color: white;
+    margin-right: 12px;
+    font-size: 14px;
+    padding: 8px 16px;
+    white-space: nowrap;
+    &:hover {
+        border : 1px solid black;
+    }
+    &:active {
+        outline:none;
+    }
+}
+

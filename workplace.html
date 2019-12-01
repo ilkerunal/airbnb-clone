@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+       .image-container{
+           height: 100vh;
+           background-image: url(images/header-image.jpg);
+           background-repeat: none;
+           background-size: cover;
+           position: relative;
+       }
+       .centered-div{
+           position: absolute;
+           background-color: red;
+           height: 50%;
+           width: 50%;
+           max-width: 500px;
+           min-width: 300px;
+           left: 50%;
+           top: 50%;
+           transform: translate(-50%,-50%);
+       }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="image-container">
+            <div class="centered-div"></div>
+        </div>
+    </div>
+</body>
+
+</html>
