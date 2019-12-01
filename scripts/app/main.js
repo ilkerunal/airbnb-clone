@@ -5,7 +5,7 @@ function navClick() {
         $(".navbar-expander").removeClass("open");
     }
     else{
-        $("#navfull").css("height", "100vh");
+        $("#navfull").css("height", "100%");
         $(".navbar-expander").addClass("open");
     }
     isNavbarOpen=!isNavbarOpen;
