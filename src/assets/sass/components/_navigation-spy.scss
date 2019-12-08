@@ -1,0 +1,63 @@
+@import "abstracts/variables";
+#navigation-spy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    // display: none;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    z-index: 1000;
+    .container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        max-width: 1060px;
+        justify-content: space-between;
+         @include media-breakpoint-down(lg){
+                 max-width: 600px;
+            }
+        .navigation-spy-menu {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        li {
+            margin-right: 5px;
+            a {
+                color: #008489;
+                text-indent: 0px;
+                font-weight: 500;
+                &:hover {
+                color: inherit;
+                text-decoration: none;
+                }
+                &.active {
+                    border-bottom: 3.5px solid black;
+                    color: black;
+                }
+            }
+        }
+    }
+    .navigation-buttons {
+        display: flex;
+        .upload, .heart {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            a {
+                color: $ocean-blue;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        .upload-link {
+            margin-right: 20px;
+        }
+        svg {
+            width: 15px;
+            margin-right: 12px;
+        }
+    }
+    }
+}

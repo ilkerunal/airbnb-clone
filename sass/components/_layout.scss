@@ -1,8 +1,0 @@
-@import "../vendor/bootstrap/grid";
-
-.mutant-container {
-    @include make-container-max-widths($max-widths: $container-max-widths,$breakpoints:$grid-breakpoints);
-    @include make-container($gutter: 48px);
-    // @include make-col-ready($gutter: $grid-gutter-width);
-    // @include make-row($gutter: $grid-gutter-width);
-}

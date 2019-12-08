@@ -1,0 +1,86 @@
+@import "../abstracts/variables";
+
+.places-container{
+    &.places-to-travel{
+        @include media-breakpoint-down(xl)  {
+            :nth-child(5n){
+                display: none;
+            }
+        }
+    }
+
+    .col-xxl{
+        min-width: 0px;
+        margin-bottom: 24px;
+    }
+    .airbnb-places-card{
+        border:none;
+        height: auto;
+        .places-header{
+            position: relative;
+            overflow: hidden;
+            .slick-xxl{
+                min-width: 0px;
+                .places-image-container{
+                border-radius: 5px;
+                overflow: hidden;
+                min-width: 0px;
+                img{
+                    width: 100%;
+                    min-width: 0px;
+                }
+                }
+            }
+            &:hover {
+                .slick-prev, .slick-next, .btn-heart {
+                    opacity: 1;
+                }
+            }
+           
+            .slick-prev, .slick-next, .btn-heart {
+                opacity: 0;
+                transition: opacity scale 0.5s;
+                position: absolute;
+                z-index: 2;
+                
+            }
+            .btn-heart {
+                height: 24px;
+                width: 24px;
+                background-color: white;
+                padding: 4px;
+                border-radius : 50%;
+                top: 10px;
+                right: 10px;
+            
+            }
+            .slick-prev {
+                left: 0px;
+            }
+            .slick-next {
+                right: 24px;
+            }
+        }
+         .places-body{
+            .places-title{
+                .airbnb-places-card-location{
+                    flex: 0 0 auto; 
+                    margin: 0px 0px 0px 5px;
+                    display: inline;
+                    text-overflow: ellipsis;
+                    font-size: 12px;
+                    font-weight: 500;
+                    opacity: .7;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-up(md)  {
+        .airbnb-pink-star{
+            margin-top : 5px;
+            float: right;
+        }
+    }
+}
+
+

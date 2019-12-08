@@ -1,0 +1,46 @@
+@import "variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
+$container-max-widths: (
+    sm: 724px,
+    md: 944px,
+    lg: 1120px,
+    xl: 1140px,
+    xxl : 1600px,
+) !default;
+  
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl : 1440px,
+) !default;
+
+  .container{
+  padding: 0 4rem 0 4rem;
+  
+  @include media-breakpoint-up(lg){
+        padding: 0 80px 0 80px;
+  }
+}
+
+$input-focus-box-shadow : none !default;
+$input-focus-border-color : #484848 !default;
+$link-decoration : none;
+$link-hover-decoration : none;
+$input-line-height :2.1 !default;
+$link-color : $airbnb-text-color !default;
+$grid-gutter-width: 16px;
+
+
+// .carousel-inner .carousel-item-right.active,
+//     .carousel-inner .carousel-item-next {
+//       transform: translateX(25%);
+//     }
+    
+//   .carousel-inner .carousel-item-left.active, 
+//   .carousel-inner .carousel-item-prev {
+//     transform: translateX(-25%);
+// }
+

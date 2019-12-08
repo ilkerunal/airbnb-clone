@@ -1,0 +1,83 @@
+@import "../../../../node_modules/slick-carousel/slick/slick-theme.scss";
+@import "variables";
+
+.slick-prev {
+    position: relative;
+    // left: 10px;
+    [dir="rtl"] & {
+        left: auto;
+        right: 10px;
+    }
+    &:before {
+        position: absolute;
+        content: "";
+        height: 24px;
+        width: 24px;
+        background-color: white;
+        bottom: 1px solid transparent;
+        border-radius: 50%;
+        background-image: url(/src/assets/media/icons/arrow-previous-slide.svg);
+        background-size: 12px 12px;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        [dir="rtl"] & {
+            content: "";
+        }
+    }
+}
+.slick-next {
+    // right: 10px;
+    [dir="rtl"] & {
+        left: 10px;
+        right: auto;    
+    }
+    &:before {
+        position: absolute;
+        content: "";
+        height: 24px;
+        width: 24px;
+        background-color: white;
+        bottom: 1px solid transparent;
+        border-radius: 50%;
+        background-image: url(/src/assets/media/icons/arrow-next-slide.svg);
+        background-size: 12px 12px;
+        background-position: center;
+        background-repeat: no-repeat;
+        [dir="rtl"] & {
+            content: "";
+        }
+    }
+}
+
+
+
+.slick-dots {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    li {
+        cursor: pointer;
+        button {
+            cursor: pointer;
+            &:hover, &:focus {
+                outline: none;
+                &:before {
+                    opacity: .5;
+                }
+            }
+            &:before {
+                color: white;
+                opacity: .7;
+                
+            }
+        }
+        &.slick-active button:before {
+            color: white;
+            transform: scale(1.5);
+            opacity: 1;
+        }
+    }
+}
