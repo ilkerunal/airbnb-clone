@@ -15,8 +15,8 @@ module.exports = {
       inject: true
     }),
     new HtmlWebpackPlugin({
-      filename: "category.html",
-      template: "./src/templates/category.html",
+      filename: "stays.html",
+      template: "./src/templates/stays.html",
       inject: true
     }),
     new HtmlWebpackPlugin({

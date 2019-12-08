@@ -5,20 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Underground Hygge - Earth Houses for rent in Orondo</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/media/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/media/icons/favicon-32x32.png">
 </head>
 <body class="position-relative" data-spy="scroll" data-target=".navigation-spy-menu" data-offset="10">
     <header id="category-header">
+        <nav id="navigation-spy">
+            <div class="container">
+                <ul id="navigation-spy-menu" class="nav navbar-nav navigation-spy-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#place-details">Overview · </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews · </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#host">The Host ·</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#the-neighbourhood">Location ·</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#thigs-to-keep-in-mind">Policies</a>
+                    </li>
+                </ul>
+                <ul class="nav container-rooms navigation-buttons">
+                    <li class="upload-link">
+                        <a class="upload" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" fill-opacity="0"
+                                stroke="currentColor" stroke-width="2.25" focusable="false" aria-hidden="true"
+                                role="presentation" stroke-linecap="round" stroke-linejoin="round" style="overflow: visible;">
+                                <g fill-rule="evenodd" stroke="#484848" fill="#484848" stroke-width="2.25px">
+                                    <path d="m11.5 16v-15" stroke="#484848" fill="#484848" stroke-width="2.25px"></path>
+                                    <path d="m7.5 4 4-3 4 3" stroke="#484848" fill="#484848" stroke-width="2.25px"></path>
+                                    <path d="m5.4 9.5h-3.9v14h20v-14h-3.1" stroke="#484848" fill="#484848"
+                                        stroke-width="2.25px">
+                                    </path>
+                                </g>
+                            </svg>
+                            <span>Share</span>
+                        </a>
+                    </li>
+                    <li class="heart-link">
+                        <a class="heart" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" fill-opacity="0"
+                                stroke="#484848" stroke-width="2.25" focusable="false" aria-label="Save this listing."
+                                role="img" stroke-linecap="round" stroke-linejoin="round" style="overflow: visible;">
+                                <path
+                                    d="m17.5 2.9c-2.1 0-4.1 1.3-5.4 2.8-1.6-1.6-3.8-3.2-6.2-2.7-1.5.2-2.9 1.2-3.6 2.6-2.3 4.1 1 8.3 3.9 11.1 1.4 1.3 2.8 2.5 4.3 3.6.4.3 1.1.9 1.6.9s1.2-.6 1.6-.9c3.2-2.3 6.6-5.1 8.2-8.8 1.5-3.4 0-8.6-4.4-8.6"
+                                    stroke-linejoin="round" stroke="#484848" fill="#484848" stroke-width="2.25px"></path>
+                            </svg>
+                            <span>Save</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <nav class="navbar navbar-expand-lg py-0 w-100 details" id="headerNav">
             <div class="navbar-interactions">
-                <button class="navbar-toggler navbar-brand navbar-expander" type="button" onclick="navClick()"
-                    aria-label="Toggle navigation">
-                    <svg viewBox="0 0 1000 1000" role="" aria-hidden="true" focusable="false">
-                        <path
-                            d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z">
-                        </path>
-                    </svg>
-                </button>
+                <a href="/index.html">
+                    <button class="navbar-toggler navbar-brand navbar-expander" type="button" onclick="navClick()"
+                        aria-label="Toggle navigation">
+                        <svg viewBox="0 0 1000 1000" role="" aria-hidden="true" focusable="false">
+                            <path
+                                d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z">
+                            </path>
+                        </svg>
+                    </button>
+                </a>
                 <div class="search-box-container">
                     <div class="search-box">
                         <input class="form-control" type="text" placeholder="Search" aria-label="Search">
@@ -109,81 +162,30 @@
             </ul>
         </nav>
     </header>
-   
     <main>
-        <nav id="navigation-spy">
-            <div class="container">
-                <ul id="navigation-spy-menu" class="nav navbar-nav navigation-spy-menu">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#place-details">Overview · </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#reviews">Reviews · </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#host">The Host ·</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#the-neighbourhood">Location ·</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#thigs-to-keep-in-mind">Policies</a>
-                    </li>
-                </ul>
-                <ul class="nav container-rooms navigation-buttons">
-                    <li class="upload-link">
-                        <a class="upload" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" fill-opacity="0"
-                                stroke="currentColor" stroke-width="2.25" focusable="false" aria-hidden="true"
-                                role="presentation" stroke-linecap="round" stroke-linejoin="round" style="overflow: visible;">
-                                <g fill-rule="evenodd" stroke="#484848" fill="#484848" stroke-width="2.25px">
-                                    <path d="m11.5 16v-15" stroke="#484848" fill="#484848" stroke-width="2.25px"></path>
-                                    <path d="m7.5 4 4-3 4 3" stroke="#484848" fill="#484848" stroke-width="2.25px"></path>
-                                    <path d="m5.4 9.5h-3.9v14h20v-14h-3.1" stroke="#484848" fill="#484848"
-                                        stroke-width="2.25px">
-                                    </path>
-                                </g>
-                            </svg>
-                            <span>Share</span>
-                        </a>
-                    </li>
-                    <li class="heart-link">
-                        <a class="heart" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" fill-opacity="0"
-                                stroke="#484848" stroke-width="2.25" focusable="false" aria-label="Save this listing."
-                                role="img" stroke-linecap="round" stroke-linejoin="round" style="overflow: visible;">
-                                <path
-                                    d="m17.5 2.9c-2.1 0-4.1 1.3-5.4 2.8-1.6-1.6-3.8-3.2-6.2-2.7-1.5.2-2.9 1.2-3.6 2.6-2.3 4.1 1 8.3 3.9 11.1 1.4 1.3 2.8 2.5 4.3 3.6.4.3 1.1.9 1.6.9s1.2-.6 1.6-.9c3.2-2.3 6.6-5.1 8.2-8.8 1.5-3.4 0-8.6-4.4-8.6"
-                                    stroke-linejoin="round" stroke="#484848" fill="#484848" stroke-width="2.25px"></path>
-                            </svg>
-                            <span>Save</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
         <section class="place-photos clearfix">
-            <div class="photo-container hygge-slick-slider">
+            <div class="photo-container banner-slick-slider">
                 <div class="photo-half">
-                    <img class="img-fluid" src="../assets/media/details/banner/hygge-hafl-xxl.jpg" alt="">
+                    <img  src="../assets/media/details/banner/hygge-hafl-xxl.jpg" alt="">
                 </div>
                 <div class="photo-quarter">
-                    <img class="img-fluid" src="../assets/media/details/banner/hygge-quarter-1-xxl.jpg" alt="">
+                    <img src="../assets/media/details/banner/hygge-quarter-2-xxl.jpg" alt="">
+                   
                 </div>
                 <div class="photo-quarter">
-                    <img class="img-fluid" src="../assets/media/details/banner/hygge-quarter-2-xxl.jpg" alt="">
+                    <img src="../assets/media/details/banner/hygge-quarter-1-xxl.jpg" alt="">
                 </div>
                 <div class="photo-quarter">
-                    <img class="img-fluid" src="../assets/media/details/banner/hygge-quarter-3-xxl.jpg" alt="">
+                    <img  src="../assets/media/details/banner/hygge-quarter-3-xxl.jpg" alt="">
                 </div>
                 <div class="photo-quarter">
-                    <img class="img-fluid" src="../assets/media/details/banner/hygge-quarter-4-xxl.jpg" alt="">
+                    <img  src="../assets/media/details/banner/hygge-quarter-4-xxl.jpg" alt="">
                 </div>
             </div>
             <button class="interaction-icons view-photos btn button-airbnb button-airbnb-secondary">View Photos</button>
             <div class="absolute-composite">
                 <button class="interaction-icons share btn button-airbnb button-airbnb-secondary">
-                    <svg viewBox="0 0 24 24" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-width="2.25"
+                    <svg viewBox="0 0 24 24"fill-opacity="0" stroke="currentColor" stroke-width="2.25"
                         focusable="false" aria-hidden="true" role="presentation" stroke-linecap="round" stroke-linejoin="round">
                         <g fill-rule="evenodd">
                             <path d="m11.5 16v-15"></path>
@@ -191,16 +193,18 @@
                             <path d="m5.4 9.5h-3.9v14h20v-14h-3.1"></path>
                         </g>
                     </svg>
-                    Share</button>
+                    <span>Share</span>
+                </button>
                 <button class="interaction-icons save btn button-airbnb button-airbnb-secondary">
-                    <svg viewBox="0 0 24 24" fill="currentColor" fill-opacity="0" stroke="#484848" stroke-width="2.25" focusable="false"
+                    <svg viewBox="0 0 24 24"  fill-opacity="0" stroke="#484848" stroke-width="2.25" focusable="false"
                         aria-label="Save this listing." role="img" stroke-linecap="round" stroke-linejoin="round">
                         <path
                             d="m17.5 2.9c-2.1 0-4.1 1.3-5.4 2.8-1.6-1.6-3.8-3.2-6.2-2.7-1.5.2-2.9 1.2-3.6 2.6-2.3 4.1 1 8.3 3.9 11.1 1.4 1.3 2.8 2.5 4.3 3.6.4.3 1.1.9 1.6.9s1.2-.6 1.6-.9c3.2-2.3 6.6-5.1 8.2-8.8 1.5-3.4 0-8.6-4.4-8.6"
                             stroke-linejoin="round"></path>
-                    </svg>Save</button>
+                    </svg>
+                    <span>Save</span>
+                </button>
             </div>
-            
         </section>
         <section id="place-details" class="place-details mutant-container px-4">
             <div class="places-info-content">
@@ -352,7 +356,7 @@
                     <h3 class="availability-heading">Availability</h3>
                     <p class="availability-description">This host offers a 26% weekly discount</p>
                     <picture>
-                        <source media="(max-width: 767px)" srcset="../assets/media/details/calendar/calendar-xs.jpg">
+                        <source media="(max-width: 767px)" srcset="src/assets/media/details/calendar/calendar-xs.jpg">
                         <img src="../assets/media/details/calendar/calender-lg.jpg" alt="Calendar" style="width:auto;">
                     </picture>
                 </div>
@@ -676,7 +680,7 @@
                         <a class="airbnb-link ocean-blue down-arrow" href="">Read more about the neighbourhood</a>
                         <a class="airbnb-link ocean-blue" href="">See guidebook</a>
                         <picture>
-                            <source media="(max-width: 767px)" srcset="../assets/media/details/map/google-map-xs.jpg">
+                            <source media="(max-width: 767px)" srcset="src/assets/media/details/map/google-map-xs.jpg">
                             <img src="../assets/media/details/map/google-map.jpg" alt="Calendar" style="width:auto;">
                         </picture>
                         <p>Exact location information is provided after a booking is confirmed.</p>

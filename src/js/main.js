@@ -1,72 +1,89 @@
+//Commons
 import "../assets/sass/main.scss";
 import $ from 'jquery';
 import "slick-carousel";
 import "bootstrap";
-let isNavbarOpen = false;
-let isFooterExpanded = false;
-function toggleFooter() {
-  if (isFooterExpanded) {
-    $("#footerTogglerText").html("<p>Terms, Privacy,& More</p>");
-    isFooterExpanded = false;
-  } else {
-    $("#footerTogglerText").html("<p>Close</p>");
-    isFooterExpanded = true;
+
+const btnTermsContent =
+  '<svg viewBox="0 0 18 18"  style="margin-right:12px; height:15px; width:15px; role="presentation" aria-hidden="true" focusable="false  "><path d="m17 9c0-4.42-3.58-8-8-8s-8 3.58-8 8 3.58 8 8 8 8-3.58 8-8m1 0c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9m-9-5.25c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25m0 4.25c.55 0 1 .45 1 1v5c0 .55-.45 1-1 1s-1-.45-1-1v-5c0-.55.45-1 1-1" fill-rule="evenodd"></path></svg>Terms, Privacy & More';
+
+const btnCloseContent =
+  '<svg viewBox="0 0 12 12" role="presentation" aria-hidden="true" focusable="false" style="margin-right:12px; height: 15px; width: 15px"><path d="m11.5 10.5c.3.3.3.8 0 1.1s-.8.3-1.1 0l-4.4-4.5-4.5 4.5c-.3.3-.8.3-1.1 0s-.3-.8 0-1.1l4.5-4.5-4.4-4.5c-.3-.3-.3-.8 0-1.1s.8-.3 1.1 0l4.4 4.5 4.5-4.5c.3-.3.8-.3 1.1 0s .3.8 0 1.1l-4.5 4.5z" fill-rule="evenodd"></path></svg>Close';
+
+
+$(document).ready(function () {
+  $(".footer-expander").click( ()=>{
+    const footer = $("#footer");
+    const footerExpander = $(".footer-expander")[0];
+    console.log(footerExpander);
+    if (footer.hasClass("closed")) {
+      footer.removeClass("closed");
+      console.log(1);
+      footerExpander.innerHTML = btnCloseContent;
+    }
+    else {
+      console.log(2);
+      footer.addClass("closed");
+      footerExpander.innerHTML = btnTermsContent;
+    }
   }
-}
-
-
-// $(window).on("load resize", function() {
-//   var width = $(document).width();
-
-//   if (width > 768) {
-//     $(".hygge-slick-slider")
-//       .not("slick-initialized")
-//       .slick("unslick");
-//   } else {
-//     $(".hygge-slick-slider").slick({
-//       slidesToShow: 1,
-//       slidesToScroll: 1,
-//       infinite: true,
-//       speed: 300,
-//       dots: true,
-//       arrows: true
-//     });
-//   }
-// });
-function navClick() {
-  if (isNavbarOpen) {
-    $("#navfull").css("height", "0");
-    $(".navbar-expander").removeClass("open");
-  } else {
-    $("#navfull").css("height", "100%");
-    $(".navbar-expander").addClass("open");
+  );
+  $("#navbar-toggler").click( () => {
+    const navBar = document.getElementById("navfull");
+    if (navBar  && navBar.style.height == "100%") {
+      navBar.style.height = "0";
+    }
+    else {
+      navBar.style.height = "100%";
+    }
   }
-  isNavbarOpen = !isNavbarOpen;
-}
+  );
+
+  $(".slick-cards").each(function () {
+    let slickCarouselUnit = $(this);
+    slickCarouselUnit.slick({
+      dots: true,
+      arrows: true,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+  });
+});
+
+
+
+$(window).on("load resize", function() {
+  var width = $(document).width();
+  if (width > 768) {
+    $(".banner-slick-slider").not("slick-initialized").slick("unslick");
+    
+  } 
+  else {
+    $(".banner-slick-slider").not("slick-initialized").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      speed: 300,
+      dots: true,
+      arrows: true
+    });
+  }
+});
+
 $(document).ready(function() {
   $(window).on("load resize scroll",function () {
     let currentScrollTop = $(this).scrollTop();
-    if (currentScrollTop > 600 && $(this).width() > 768) {
+    if (currentScrollTop > 700 && $(this).width() > 768) {
       $('#navigation-spy').attr('style',
         'display: block ;');
     }
-    else if (currentScrollTop < 600 || $(this).width() < 768) {
+    else if (currentScrollTop < 700 || $(this).width() < 768) {
       $('#navigation-spy').attr('style', 'display: none');
     }
   });
 
-  $(window).on("activate.bs.scrollspy", function() {
-    $("#navigation-links .active").css({
-      "border-bottom": "3px solid #484848",
-      color: "#484848"
-    });
-    $("#navigation-links .nav-link")
-      .not(".active")
-      .css({
-        border: "none",
-        color: "#008489"
-      });
-  });
+ 
   
   $(".featured-slick-slider").slick({
     infinite: false,
@@ -96,7 +113,7 @@ $(document).ready(function() {
   });
 
 
-  $('.checkout-hidden').css("display", "none");
+  
   $(window).scroll(function () {
     let currentScrollTop = $(this).scrollTop();
     if (currentScrollTop > 800) {
@@ -108,16 +125,7 @@ $(document).ready(function() {
   });
 
   //places-card-slick
-  $(".slick-xxl").each(function() {
-    let slickCarouselUnit = $(this);
-    slickCarouselUnit.slick({
-      dots: true,
-      arrows: true,
-      speed: 300,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    });
-  });
+ 
 
   //detail banner slick
   $(".carousel-mode").slick({

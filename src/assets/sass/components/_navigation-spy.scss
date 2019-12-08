@@ -1,5 +1,6 @@
 @import "abstracts/variables";
 #navigation-spy {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -8,15 +9,17 @@
     height: 50px;
     background-color: white;
     z-index: 1000;
+    font-size: 14px;
+    border-bottom:1px solid rgb(235, 235, 235);
     .container{
         height: 100%;
         display: flex;
         align-items: center;
         max-width: 1060px;
         justify-content: space-between;
-         @include media-breakpoint-down(lg){
+        @include media-breakpoint-down(lg){
                  max-width: 600px;
-            }
+        }
         .navigation-spy-menu {
         display: flex;
         justify-content: flex-start;

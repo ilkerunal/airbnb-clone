@@ -13,6 +13,9 @@
     line-height: 16px;
     font-size: 16px;
     z-index: 4;
+    @include media-breakpoint-down(md)  {
+        display: none;
+    }
     svg{
         margin-right: 10px;
     }
@@ -51,9 +54,11 @@ footer{
     width: 100%;
     z-index: 1;
     box-shadow: $airbnb-box-shadow;
+   
     .visible{
-    visibility: visible ;
-}
+        visibility: visible ;
+   
+    }
     .footer-container{
         padding: 48px 24px 24px 24px;
         max-width: 1080px;

@@ -1,5 +1,6 @@
 @import "../abstracts/variables";
 
+
 .places-container{
     &.places-to-travel{
         @include media-breakpoint-down(xl)  {
@@ -16,19 +17,24 @@
     .airbnb-places-card{
         border:none;
         height: auto;
+        margin-bottom: 16px;
         .places-header{
             position: relative;
             overflow: hidden;
-            .slick-xxl{
+            .slick-dotted.slick-slider {
+                margin-bottom: 0;
+            }
+            .slick-cards{
                 min-width: 0px;
                 .places-image-container{
                 border-radius: 5px;
                 overflow: hidden;
                 min-width: 0px;
-                img{
-                    width: 100%;
-                    min-width: 0px;
-                }
+                    img{
+                        width: 100%;
+                        min-width: 0px;
+                        max-height: 210px;
+                    }
                 }
             }
             &:hover {
@@ -62,6 +68,7 @@
             }
         }
          .places-body{
+             margin-top: 12px;
             .places-title{
                 .airbnb-places-card-location{
                     flex: 0 0 auto; 
