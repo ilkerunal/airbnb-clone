@@ -740,51 +740,65 @@
             </div>
             <aside class="side-container">
                 <div class="checkout">
-                    <div class="dates-and-prices">
-                        <h4>1140 &#8378; <span>per night</span></h4>
-                        <span class="airbnb-pink-star">
-                            <span class="feedback-point">4.77 </span>
-                            <span class="feedback-count">(567 reviews)</span>
-                        </span>
-                        <hr class="divider">
-                        <div class="checkout-dates">
-                            <label class="checkout-label" for="">Dates</label>
-                            <div class="dates-composite">
-                                <input type="text" class="form-control check" placeholder="Check-in" aria-label="" aria-describedby="basic-addon1">
-                                <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false"
-                                    style="height: 24px; width: 24px;">
-                                    <path
-                                        d="m0 12.5a.5.5 0 0 0 .5.5h21.79l-6.15 6.15a.5.5 0 1 0 .71.71l7-7v-.01a.5.5 0 0 0 .14-.35.5.5 0 0 0 -.14-.35v-.01l-7-7a .5.5 0 0 0 -.71.71l6.15 6.15h-21.79a.5.5 0 0 0 -.5.5z"
-                                        fill-rule="evenodd"></path>
-                                </svg>
-                                <input type="text" class="form-control check" placeholder="Check-out" aria-label="" aria-describedby="basic-addon1">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="checkout-guests">
-                        <label class="checkout-label">Guests</label>
-                        <div class="dropdown">
-                            <button class="btn btn-block checkout-dropdown-button" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span>1 guest</span> 
-                                <span>
-                                    <svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false"
-                                        style="height: 16px; width: 16px; display: block; fill: currentcolor;">
-                                        <path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z"
+                    <div class="checkout-content">
+                        <div class="dates-and-prices">
+                            <h4>1140 &#8378; <span>per night</span></h4>
+                            <span class="airbnb-pink-star">
+                                <span class="feedback-point">4.77 </span>
+                                <span class="feedback-count">(567 reviews)</span>
+                            </span>
+                            <hr class="divider">
+                            <div class="checkout-dates">
+                                <label class="checkout-label" for="">Dates</label>
+                                <div class="dates-composite">
+                                    <input type="text" class="form-control check" placeholder="Check-in" aria-label=""
+                                        aria-describedby="basic-addon1">
+                                    <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false"
+                                        style="height: 24px; width: 24px;">
+                                        <path
+                                            d="m0 12.5a.5.5 0 0 0 .5.5h21.79l-6.15 6.15a.5.5 0 1 0 .71.71l7-7v-.01a.5.5 0 0 0 .14-.35.5.5 0 0 0 -.14-.35v-.01l-7-7a .5.5 0 0 0 -.71.71l6.15 6.15h-21.79a.5.5 0 0 0 -.5.5z"
                                             fill-rule="evenodd"></path>
                                     </svg>
-                            </span>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <button class="dropdown-item" type="button">Action</button>
-                                <button class="dropdown-item" type="button">Another action</button>
-                                <button class="dropdown-item" type="button">Something else here</button>
+                                    <input type="text" class="form-control check" placeholder="Check-out" aria-label=""
+                                        aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout-guests">
+                            <label class="checkout-label">Guests</label>
+                            <div class="dropdown">
+                                <button class="btn btn-block checkout-dropdown-button" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>1 guest</span>
+                                    <span>
+                                        <svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false"
+                                            style="height: 16px; width: 16px; display: block; fill: currentcolor;">
+                                            <path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z"
+                                                fill-rule="evenodd"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <button class="dropdown-item" type="button">Action</button>
+                                    <button class="dropdown-item" type="button">Another action</button>
+                                    <button class="dropdown-item" type="button">Something else here</button>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <button class="btn button-airbnb button-airbnb-primary reserve">Reserve</button>
+                        <p class="charge-notify">You won't be charged yet</p>
+                        <div class="checkout-hidden">
+                            <hr class="divider">
+                            <div class="hidden-content">
+                                <p><strong>This place is getting a lot of attention.</strong> It's been viewed 500+ times in the past week.</p>
+                                <img src="../assets/media/details/ampul.gif" width="60px" alt="light-bulb">
                             </div>
                         </div>
                     </div>
-                    <button class="btn button-airbnb button-airbnb-primary reserve">Reserve</button>
-                    <p class="charge-notify">You won't be charged yet</p>
+                    <a class="report" href=""> <i class="fa fa-flag"></i>Report this listing</a>
                 </div>
+              
             </aside>
         </section>
         <section class="checkout-fixed">
@@ -882,5 +896,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/cee25661c9.js" crossorigin="anonymous"></script>
 </body>
 </html> 

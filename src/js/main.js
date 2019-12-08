@@ -95,6 +95,18 @@ $(document).ready(function() {
     ]
   });
 
+
+  $('.checkout-hidden').css("display", "none");
+  $(window).scroll(function () {
+    let currentScrollTop = $(this).scrollTop();
+    if (currentScrollTop > 800) {
+      $('.checkout-hidden').slideDown(200).css("display", "flex");
+    }
+    else if (currentScrollTop < 800) {
+      $('.checkout-hidden').slideUp(300);
+    }
+  });
+
   //places-card-slick
   $(".slick-xxl").each(function() {
     let slickCarouselUnit = $(this);
